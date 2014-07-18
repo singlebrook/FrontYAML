@@ -8,9 +8,7 @@
 
 namespace Mni\FrontYAML;
 
-use Mni\FrontYAML\Bridge\Parsedown\ParsedownParser;
 use Mni\FrontYAML\Bridge\Symfony\SymfonyYAMLParser;
-use Mni\FrontYAML\Markdown\MarkdownParser;
 use Mni\FrontYAML\YAML\YAMLParser;
 
 /**
@@ -33,30 +31,29 @@ class Parser
     public function __construct(YAMLParser $yamlParser = null, MarkdownParser $markdownParser = null)
     {
         $this->yamlParser = $yamlParser ?: new SymfonyYAMLParser();
-        $this->markdownParser = $markdownParser ?: new ParsedownParser();
+        $this->markdownParser = $markdownParser ?: FALSE;
     }
 
     /**
      * Parse a string containing the YAML front matter and the markdown.
      *
      * @param string $str
-     * @param bool   $parseMarkdown Should the Markdown be turned into HTML?
      *
      * @return Document
      */
-    public function parse($str, $parseMarkdown = true)
+    public function parse($str)
     {
         $lines = explode(PHP_EOL, $str);
 
         if (count($lines) <= 1) {
-            if ($parseMarkdown) {
+            if ($this->markdownParser) {
                 $str = $this->markdownParser->parse($str);
             }
             return new Document(null, $str);
         }
 
         if (rtrim($lines[0]) !== '---') {
-            if ($parseMarkdown) {
+            if ($this->markdownParser) {
                 $str = $this->markdownParser->parse($str);
             }
             return new Document(null, $str);
@@ -79,7 +76,7 @@ class Parser
         $yaml = $this->yamlParser->parse(implode(PHP_EOL, $yaml));
         $content = implode(PHP_EOL, array_slice($lines, $i));
 
-        if ($parseMarkdown) {
+        if ($this->markdownParser) {
             $content = $this->markdownParser->parse($content);
         }
 

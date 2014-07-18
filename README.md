@@ -27,10 +27,22 @@ $yaml = $document->getYAML();
 $html = $document->getContent();
 ```
 
-If you don't want the Markdown to be parsed (maybe because it is not Markdown):
+If you want the Markdown to be parsed:
+
+```json
+{
+    "require": {
+        "mnapoli/front-yaml": "*",
+        "erusev/parsedown": "~0.8"
+    }
+}
+```
 
 ```php
-$document = $parser->parse($str, false);
+$markdown_parser = new Parsedown();
+$parser = new Mni\FrontYAML\Parser(null, $markdown_parser);
+
+$document = $parser->parse($str);
 ```
 
 ## Example
@@ -51,8 +63,13 @@ var_export($document->getYAML());
 // array("foo" => "bar")
 
 var_export($document->getContent());
-// "<p>This is <strong>strong</strong></p>"
+// "This is **strong**."
+
+// If a markdown parser was used:
+// "<p>This is <strong>strong</strong></p>."
 ```
+
+
 
 ## YAML and Markdown parsers
 
@@ -78,4 +95,4 @@ interface MarkdownParser
 }
 ```
 
-FrontYAML uses by default [Parsedown Markdown parser](http://parsedown.org/).
+FrontYAML suggests [Parsedown Markdown parser](http://parsedown.org/).

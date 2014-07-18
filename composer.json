@@ -7,7 +7,9 @@
         }
     },
     "require": {
-        "symfony/yaml": "~2.1",
-        "erusev/parsedown": "~0.8"
+        "symfony/yaml": "~2.1"
+    },
+    "suggest": {
+        "erusev/parsedown": "Allows parsing of markdown."
     }
 }
