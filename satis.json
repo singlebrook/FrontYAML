@@ -1,0 +1,8 @@
+{
+    "name": "My Repository",
+    "homepage": "http://singlebrook.github.io/FrontYAML",
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/singlebrook/FrontYAML.git" }
+    ],
+    "require-all": true
+}

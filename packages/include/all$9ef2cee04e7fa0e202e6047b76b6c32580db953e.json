@@ -1,0 +1,140 @@
+{
+    "packages": {
+        "mnapoli/front-yaml": {
+            "1.0.0": {
+                "name": "mnapoli/front-yaml",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/singlebrook/FrontYAML.git",
+                    "reference": "2d5932e55ce423d96145660d35c484c925fec774"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/singlebrook/FrontYAML/zipball/2d5932e55ce423d96145660d35c484c925fec774",
+                    "reference": "2d5932e55ce423d96145660d35c484c925fec774",
+                    "shasum": ""
+                },
+                "require": {
+                    "erusev/parsedown": "~0.8",
+                    "symfony/yaml": "~2.1"
+                },
+                "time": "2014-01-24 23:37:03",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Mni\\FrontYAML\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "support": {
+                    "source": "https://github.com/singlebrook/FrontYAML/tree/1.0.0"
+                }
+            },
+            "1.0.1": {
+                "name": "mnapoli/front-yaml",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/singlebrook/FrontYAML.git",
+                    "reference": "1b0420a9921a36b5c8202d97e70fc288059ac0b2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/singlebrook/FrontYAML/zipball/1b0420a9921a36b5c8202d97e70fc288059ac0b2",
+                    "reference": "1b0420a9921a36b5c8202d97e70fc288059ac0b2",
+                    "shasum": ""
+                },
+                "require": {
+                    "erusev/parsedown": "~0.8",
+                    "symfony/yaml": "~2.1"
+                },
+                "time": "2014-01-24 23:46:38",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Mni\\FrontYAML\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "support": {
+                    "source": "https://github.com/singlebrook/FrontYAML/tree/1.0.1"
+                }
+            },
+            "1.0.2": {
+                "name": "mnapoli/front-yaml",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/singlebrook/FrontYAML.git",
+                    "reference": "4c42c242525d228b8042ab1c331abb666c51d270"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/singlebrook/FrontYAML/zipball/4c42c242525d228b8042ab1c331abb666c51d270",
+                    "reference": "4c42c242525d228b8042ab1c331abb666c51d270",
+                    "shasum": ""
+                },
+                "require": {
+                    "erusev/parsedown": "~0.8",
+                    "symfony/yaml": "~2.1"
+                },
+                "time": "2014-01-25 00:05:48",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Mni\\FrontYAML\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "support": {
+                    "source": "https://github.com/singlebrook/FrontYAML/tree/1.0.2"
+                }
+            },
+            "dev-master": {
+                "name": "mnapoli/front-yaml",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/singlebrook/FrontYAML.git",
+                    "reference": "8157b53fa7d8787821b544c964afd910608ee947"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/singlebrook/FrontYAML/zipball/8157b53fa7d8787821b544c964afd910608ee947",
+                    "reference": "8157b53fa7d8787821b544c964afd910608ee947",
+                    "shasum": ""
+                },
+                "require": {
+                    "symfony/yaml": "~2.1"
+                },
+                "suggest": {
+                    "erusev/parsedown": "Allows parsing of markdown."
+                },
+                "time": "2014-07-18 17:44:12",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Mni\\FrontYAML\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "support": {
+                    "source": "https://github.com/singlebrook/FrontYAML/tree/master"
+                }
+            }
+        }
+    }
+}
