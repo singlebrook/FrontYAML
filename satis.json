@@ -1,6 +1,6 @@
 {
     "name": "My Repository",
-    "homepage": "http://singlebrook.github.io/FrontYAML",
+    "homepage": "http://singlebrook.github.io/FrontYAML/packages",
     "repositories": [
         { "type": "vcs", "url": "https://github.com/singlebrook/FrontYAML.git" }
     ],
